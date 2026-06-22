@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Gallery - A.S Interior</title>
+    <link rel="icon" type="image/png" href="image/logo1.PNG" />
+
+    <link rel="stylesheet" href="css/gallery.css" />
+
+    <!-- GOOGLE FONTS -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+
+    <header>
+      <nav class="navbar">
+        <h2 class="logo">A.S Interior</h2>
+
+        <ul class="nav-links">
+          <li>
+            <a href="https://asinterior.netlify.app/"> Home </a>
+            <a href="video.html">Video Gallery</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- ===== HERO ===== -->
+
+    <section class="gallery-hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="gallery-subtitle">PREMIUM INTERIOR SHOWCASE</p>
+
+        <h1>Our Creative Interior Gallery</h1>
+
+        <p>
+          Explore premium interior projects, modern craftsmanship and elegant
+          finishing designed with precision.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+
+    <section id="gallery_section">
+      <!-- FILTERS -->
+
+      <div class="gallery-filters">
+        <button class="active" onclick="filterGallery('all', this)">All</button>
+
+        <button onclick="filterGallery('bedroom', this)">Bedroom</button>
+
+        <button onclick="filterGallery('kitchen', this)">Kitchen</button>
+
+        <button onclick="filterGallery('tv', this)">TV Unit</button>
+
+        <button onclick="filterGallery('wardrobe', this)">Wardrobe</button>
+
+        <button onclick="filterGallery('ceiling', this)">False Ceiling</button>
+      </div>
+
+      <!-- GRID -->
+
+      <div class="gallery-grid" id="gallery"></div>
+    </section>
+
+    <!-- ===== LIGHTBOX ===== -->
+
+    <div id="lightbox">
+      <span id="closeLightbox"> × </span>
+
+      <img id="lightboxImg" src="" alt="" />
+    </div>
+
+    <a href="https://wa.me/918130755846?text=Hi%20I%20want%20interior%20design%20consultation" class="whatsapp-float" target="_blank">
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <script type="module" src="js/gallery.js"></script>
+  </body>
+</html>
